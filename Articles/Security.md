@@ -83,8 +83,9 @@ Credentials are send as a request header with every `HTTP(S)` request.
 A drawback is that the user cannot login on the website itself.
 This is compareable to owning the keys of a house.
 
-- You need to use the keys every single time you enter. 
+- You need to use the keys every single time you come home.
 - Nobody is in the house to help with getting the keys.
+- As long as you are in the house, you can keep the door unlocked.
 
 When authentication is enabled the webserver will return `401 Unauthorized` with a `response header` named `www-authenticate`.
 The `www-authenticate` header gives information about the specific `authentication scheme` that needs to be used.
@@ -100,7 +101,7 @@ Modern browsers are implemented to display a login form which will allow the use
 
 Further requests that are linked to this browser session will also include this `request header` and prevent the need to authenticate on each individual request.
 
-###### Basic
+##### Basic
 
 Response (when sending request without credentials)
 
@@ -110,7 +111,7 @@ Valid request
 
 > Authorization: `Basic D08mRvgvbhDsU`
 
-###### Digest
+##### Digest
 
 Response (when sending request without credentials
 
@@ -120,10 +121,29 @@ Valid request
 
 > Authorization: `Digest username="user", realm="realm1", nonce="jd8d", uri="/path/res", qop="auth", nc=001, cnonce="jdi", response="JHD"`
 
+##### Alternatives
 
-#### Cookies
+Most modern websites do not enable authentication on the webserver, but inside the website.
 
-This method requires
+This method of authentication is different and not part of the `HTTP(S)` protocol.
+However, it serves a similar purpose from the end user perspective.
+
+What happens is that the website will return a anonymous page in which the user only has restricted access.
+A `login form on the webpage` can be used to login, providing a much `better user experience`.
+
+This corresponds to going to a hotel and checking in to your room.
+- The first time you come in the hotel you can book a room (`create account`)
+- If you forgot your keycard you can ask the staff for assistance (`forgot password`)
+- You can always enter the hotel, even if you don't have access to the room. (`branded login form inside the website`)
+
+This solution uses `cookies`, which are also send and retrieved using a `request header` and `response header`.
+After logging in the webserver will return the `response header` named `Set-Cookie` which will contain authenticated credentials.
+Subsequent `HTTP(S)` requests will then include `Cookie` to keep the session valid, this is also automatic browser behavior.
+
+Note that there are 2 types of cookies.
+
+- `Session cookies` that expire after the session has ended, this can be implemented differently according to the `browser`.
+- `Persistent cookies` that expire after a due date, the cookie is `saved on disk` along with the due date.
 
 ## Certificate ->
 
