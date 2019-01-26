@@ -145,6 +145,23 @@ Note that there are 2 types of cookies.
 - `Session cookies` that expire after the session has ended, this can be implemented differently according to the `browser`.
 - `Persistent cookies` that expire after a due date, the cookie is `saved on disk` along with the due date.
 
+`Persistent cookies` are typically used when tagging a `remember me` checkbox on the login form.
+
+## Assymetric Cryptography
+
+`Assymetric Cryptography` is used for encrypting messages.
+It makes use of a `public key` and `private key` which both contain non-identical large numbers.
+You can encrypt a message with either key, and decrypt with the opposite key.
+The `public key` can be shared without any risk.
+The `private key` is to be kept secret.
+
+`TLS` and other protocols such as `SSH`, `S/MIME` makes use of `Assymetric Cryptography` to ensure safe communications.
+Since `HTTPS` uses `TLS`, it also makes use of `Assymetric Cryptography`
+
+An example of `SSH` is a `linuxserver` where you can add the `public key` in a hidden folder `.ssh/id_rsa` in the user directory.
+Using `PuTTY` on windows you can login without entering credentials by loading your `private key` into `Pageant`.
+This is more secure than using password authentication.
+
 ## Certificate ->
 
 hash
