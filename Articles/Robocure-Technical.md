@@ -15,7 +15,7 @@ To view the full scope of the ROBO-CURE project, take a look at http://smit.vub.
 
 [Researchers at Plymouth](https://www.plymouth.ac.uk/news/robots-have-power-to-significantly-influence-childrens-opinions) have previously shown that children respond very well to robots when it comes to influence opinions. This makes them strongly suited for the role of educator.
 
-A humanoid robot would combine the benefits provided by the digital world. The robot can react based on the behaviour and actions of the child. Although a tablet could be used for the same kinds of interaction, the lack of social interaction is a key difference. However, to broaden our scope, the proposed solution also supports the use of a browser, if there is no robot available.
+A humanoid robot would combine the benefits provided by the digital world. The robot can react based on the behaviour and actions of the child. Although a tablet could be used for the same kinds of interaction, the lack of social interaction is a key difference. However, to broaden our scope, the proposed solution also supports the use of a browser if there is no robot available.
 
 ## StoryLine 2 Pepper
 
