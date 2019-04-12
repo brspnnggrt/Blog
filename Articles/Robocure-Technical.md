@@ -45,9 +45,7 @@ When activating browser-support, the learning module makes use of modern browser
 
 Another available feature is the normalization of audio in all  `.mp4` files found within the StoryLine output.
 
-When a learning module is started pepper will always introduce himself, before asking the patient if he wants to proceed.
-Using the visual capabilities of the tablet, it is possible to hint which words are expected by the robot, to improve recognition.
-Some tolerance has been built in, when the robot is unable to recognize what has been said, or is not able to map it to a correct behaviour, it will ask the patient to repeat. This process continues until the robot can proceed. To make sure the patient does not get stuck, every interaction is also achievable using the tablet. This is however seen as a backup option, since it reduces the advantages of a social robot.
+When a learning module is started, pepper will introduce himself before asking the patient if he wants to proceed. This introduction is always added by StoryLine 2 Pepper. Using the visual capabilities of the tablet, it is possible to hint which words are expected by the robot, to improve recognition. Some tolerance has been built in, when the robot is unable to recognize what has been said, or is not able to map it to a correct behaviour, it will ask the patient to repeat. This process continues until the robot can proceed. To make sure the patient does not get stuck, every interaction is also achievable using the tablet. This is however seen as a backup option, since it reduces the advantages of a social robot.
 
 Given a scenario where the learning modules are deployed on a webserver, an intelligent task scheduling system can start a module on a specified Pepper robot, and log to a specified LRS. There are no references to the specific Pepper robot, or the specified LRS system, in the learning modules themselves.
 
