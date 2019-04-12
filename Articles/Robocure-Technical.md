@@ -38,7 +38,7 @@ In this command, the user can specify whether the robot should automatically pro
     Say("Hello, I am pepper!", { goToNextSlide: false });
 ```
 
-Since there are only 2 possible commands available, adding the interaction in StoryLine is very convenient.
+Since there are only 2 commands available, adding the interaction in StoryLine is very convenient.
 Adding browser support also adds the benefit that all learning modules can be fully tested without the need of a robot.
 
 When activating browser-support, the learning module makes use of modern browser features such as [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) and [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) to handle speech recognition & pronounciation.
