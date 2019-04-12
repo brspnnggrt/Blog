@@ -5,7 +5,7 @@
 Arinti has been working on a robotics research project named [ROBO-CURE](http://smit.vub.ac.be/project/robo-cure).
 The purpose of ROBO-CURE is to assess the chemistry between Social Robotics, Internet of Things and Artificial Intelligence when applied for medical purposes. The project is part of ICON and therefore includes multiple partners from the private and public sector.
 
-We at [Arinti](https://arinti.ai/) teamed up with our colleagues at [The Learning Hub](http://www.thelearninghub.be/) to seamlessly merge E-Learning with Social Robotics. Our target was to create digital learning content which could be taught by a humanoid robot, without the needed of specialist programming. We describe our solution as **StoryLine 2 Pepper**.
+We at [Arinti](https://arinti.ai/) teamed up with our colleagues at [The Learning Hub](http://www.thelearninghub.be/) to seamlessly merge E-Learning with Social Robotics. Our target was to create digital learning content which could be taught by a humanoid robot, without specialist programming. We describe our solution as **StoryLine 2 Pepper**.
 
 The humanoid robot of choice is [Pepper](https://www.softbankrobotics.com/emea/en/robots/pepper), which has been used for robotics research worldwide. Pepper is specifically suited for social robotics, which makes it an ideal candidate for ROBO-CURE.
 
@@ -20,7 +20,7 @@ A humanoid robot would combine the benefits provided by the digital world. The r
 ## StoryLine 2 Pepper
 
 StoryLine 2 Pepper is the name of our approach to make StoryLine output fully integrated with the Pepper robot.
-By minimizing custom development and using as much out of the box functinalities provided by StoryLine we can make sure our approach is suitable for end-users. We chose to use storyline because of the export capabilities which can be easily extended using Javascript. StoryLine can be integrated out-of-the-box with an LRS system such as Learning Locker. This makes it relatively easy to monitor the education of the patient. StoryLine is a leader in the E-Learning community, and is similar to PowerPoint. The learning content created in StoryLine can be exported to HTML content with integrated LRS support. This content can be adapted to add an interface that provides interaction with the robot. This interface can be accessed from within StoryLine using the Javascript support. This might sound technical but all actions can be achieved with 1 line of code.
+By minimizing custom development and using as much out-of-the-box functionalities as possible provided by StoryLine, we can make sure our approach is suitable for end-users. We chose to use storyline because of the export capabilities which can be easily extended using Javascript. StoryLine can be integrated with an LRS system such as Learning Locker. This makes it relatively easy to monitor the education of the patient. StoryLine is a leader in the E-Learning community, and is similar to PowerPoint. The learning content created in StoryLine can be exported to HTML content with integrated LRS support. This content can be adapted to add an interface that provides interaction with the robot. This interface can be accessed from within StoryLine using the Javascript support. This might sound technical but all actions can be achieved with 1 line of code.
 
 We refer to the exported HTML content, after it has been processed by StoryLine 2 Pepper, by a Learning module.
 
@@ -39,7 +39,7 @@ In this command, the user can specify whether the robot should automatically pro
 ```
 
 Since there are only 2 possible commands available, adding the interaction in StoryLine is very convenient.
-Adding browser support also adds he benefit that all learning modules can be fully tested without the need of a robot.
+Adding browser support also adds the benefit that all learning modules can be fully tested without the need of a robot.
 
 When activating browser-support, the learning module makes use of modern browser features such as [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) and [SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis) to handle speech recognition & pronounciation.
 
