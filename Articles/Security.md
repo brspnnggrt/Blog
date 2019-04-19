@@ -52,7 +52,7 @@ The `response` returned by the serer will be in this format:
     Content-Type: text/html
     ...
 
-Note that both follow the same format (`Request/Response Line` + `Headers` + `Body`)
+Note that both follow the same format (`StatusLine` + `Headers` + `Body`)
 
 In case of `HTTPS`, the above `request` will not be send without encrypting.
 
